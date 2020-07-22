@@ -1,0 +1,240 @@
+.header
+  margin-bottom: 100px
+  position: relative
+  padding: 50px 0
+  width: 100%
+  z-index: 50
+  height: 100vh
+  background: url("../img/main_bg.jpg") center/cover no-repeat
+  @media (max-width: 576px)
+    margin-bottom: 50px
+
+  @media (max-width: 768px)
+    padding-top: 20px
+
+  .container
+    max-width: 1320px
+    height: 100%
+    position: relative
+
+  // .header__row
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    @media (max-width: 768px)
+      justify-content: flex-start
+
+  // .header__offer
+  &__offer
+
+  // .header__scroll
+  &__scroll
+    position: absolute
+    bottom: 150px
+    right: -4.3%
+    transform: rotate(90deg)
+    a
+      position: relative
+      background: none
+      color: $active-color
+      font-size: 15px
+      font-weight: 700
+      width: 100%
+      height: 100%
+      padding: 0
+      margin: 0
+      span
+        font-family: Arial
+        font-size: 30px
+        vertical-align: sub
+    @media (max-width: 768px)
+      display: none
+
+
+
+.menu
+
+  // .menu__list
+  &__list
+    display: flex
+
+    &:first-child
+      a
+        margin-left: 0
+
+
+  // .menu__link
+  &__link
+    margin-right: 15px
+    margin-left: 15px
+    font-weight: 500
+
+    color: $text-color-light
+    text-transform: uppercase
+
+  // .menu__social
+  &__social
+    a
+      margin-right: 15px
+      margin-left: 15px
+      font-size: 20px
+      color: $text-color-light
+      &:last-child
+        margin-right: 0
+
+      &:first-child
+        margin-left: 0
+
+
+      @media (max-width: 768px)
+        margin-right: 5px
+        margin-left: 5px
+
+
+
+
+
+  @media (max-width: 768px)
+    &__body
+      position: fixed
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      overflow: auto
+      background-color: #f2f2f9
+      padding-top: 150px
+      transform: translate(0, -100%)
+      transition: all 0.3s
+      z-index: 1
+
+      &.active
+        transform: translate(0, 0)
+
+
+    &__list
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+      li
+        padding: 0 0 45px 0
+
+
+    &__link
+      color: $text-color-dark
+      font-size: 20px
+
+.icon-menu
+  @media (max-width: 768px)
+    display: block
+    position: absolute
+    top: 0
+    right: 15px
+    width: 30px
+    height: 18px
+    cursor: pointer
+    z-index: 5
+    span
+      transition: all 0.3s
+      top: 8px
+      left: 0px
+      position: absolute
+      width: 100%
+      height: 2px
+      background-color: $text-color-light
+
+
+      &:first-child
+        top: 0
+
+      &:last-child
+        top: auto
+        bottom: 0
+
+    &.active
+      span
+        background-color: $text-color-dark
+        transform: scale(0)
+        &:first-child
+          transform: rotate(-45deg)
+          top: 8px
+
+        &:last-child
+          transform: rotate(45deg)
+          bottom: 8px
+
+.offer
+  position: absolute
+  top: 50%
+  transform: translateY(-40%)
+  // .offer__text
+  &__text
+    margin-bottom: 15px
+    padding-left: 55px
+    color: $active-color
+    text-transform: uppercase
+    letter-spacing: 4px
+    font-weight: 500
+    position: relative
+
+    @media (max-width: 768px)
+      font-size: 10px
+
+    &:before
+      content: ''
+      position: absolute
+      width: 40px
+      height: 2px
+      border: 1px solid $active-color
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+
+  // .offer__title
+  &__title
+    margin-bottom: 30px
+    font-size: 50px
+    font-weight: 700
+    color: $text-color-light
+
+    @media (max-width: 768px)
+      font-size: 35px
+
+    @media (max-width: 576px)
+      line-height: 33px
+
+
+  // .offer__subtitle
+  &__subtitle
+    margin-bottom: 15px
+    color: $text-color-light
+    font-weight: 700
+    font-size: 18px
+    letter-spacing: 2px
+
+    @media (max-width: 768px)
+      font-size: 13px
+
+  // .offer__descr
+  &__descr
+    margin-bottom: 50px
+    max-width: 448px
+    line-height: 22px
+    color: $text-color-light
+    font-size: 18px
+
+    @media (max-width: 768px)
+      font-size: 13px
+      max-width: 400px
+
+  // .offer__btn
+  &__btn
+
+
+
+  @media (max-width: 768px)
+    top: 95%
+    transform: translateY(-110%)

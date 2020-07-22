@@ -1,0 +1,219 @@
+.footer
+  margin-top: 260px
+  position: relative
+
+  @media(max-width: 700px)
+    margin-top: 100px
+  @media (max-width: 576px)
+    margin-top: 10s0px
+
+  // .footer__top
+  &__top
+    margin-bottom: 50px
+    position: relative
+    max-width: 415px
+    font-size: 24px
+    line-height: 28px
+
+    @media(max-width: 1024px)
+      max-width: 40%
+
+    @media(max-width: 768px)
+      font-size: 16px
+
+    @media(max-width: 700px)
+      margin-bottom: 50px
+      margin-left: 8%
+      max-width: 50%
+      font-size: 18px
+
+    @media(max-width: 576px)
+      margin-left: 3%
+      margin-bottom: 30px
+      font-size: 16px
+      max-width: 70%
+
+    span
+      font-weight: 500
+      color: $active-color
+
+
+  // .footer__form
+  &__form
+    padding: 100px 80px
+    position: absolute
+    z-index: 5
+    right: 0
+    top: -130px
+    background-color: $bg-color
+    border-radius: 30px
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15)
+
+    @media(max-width: 1024px)
+      padding: 50px
+      top: -75px
+
+    @media(max-width: 768px)
+      padding: 60px 40px
+
+    @media(max-width: 700px)
+      position: static
+      margin: 0 auto 100px
+      max-width: 72%
+
+    @media(max-width: 576px)
+      max-width: 95%
+      margin: 0 auto 50px
+
+
+    &::after
+      content: ''
+      position: absolute
+      left: -130px
+      top: 230px
+      width: 63px
+      height: 13px
+      background: url('../img/icons/arrow.png')
+
+      @media(max-width: 1024px)
+        top: 235px
+
+      @media(max-width: 768px)
+        top: 205px
+
+      @media(max-width: 700px)
+        top: 14%
+        left: 60%
+        transform: rotate(90deg)
+
+      @media(max-width: 576px)
+        top: 10%
+        left: 73%
+
+  // .footer__bottom
+  &__bottom
+    padding: 100px 0
+    background-color: $bg-color
+
+    @media(max-width: 576px)
+      padding: 50px 0
+
+  // .footer__button
+  &__button
+    text-align: right
+    cursor: pointer
+
+  // .footer__phone
+  &__phone
+
+  // .footer__email
+  &__email
+
+  // .footer__link
+  &__link
+    font-weight: 500
+    color: $text-color-dark
+    text-transform: uppercase
+
+    @media(max-width: 576px)
+      font-size: 10px
+
+  // .footer__social
+  &__social
+
+    .fa
+      margin-bottom: 70px
+      color: $text-color-dark
+
+      @media(max-width: 700px)
+        margin-bottom: 40px
+
+      @media(max-width: 576px)
+        // font-size: 14px
+        // margin-bottom: 30px
+        margin: 0 10px 30px 0
+
+
+  // .footer__nav
+  &__nav
+    display: flex
+
+  // .footer__menu
+  &__menu
+    flex: 0 1 45%
+    display: flex
+    justify-content: space-between
+
+    @media(max-width: 1024px)
+      flex: 0 1 55%
+
+    @media(max-width: 768px)
+      flex: 0 1 70%
+
+    @media(max-width: 576px)
+      flex: 0 1 100%
+
+  &__phone, &__email
+    padding-left: 30px
+    margin-bottom: 30px
+    font-weight: 500
+    color: $active-color
+    position: relative
+
+    @media(max-width: 576px)
+      font-size: 14px
+
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      width: 15px
+      height: 2px
+      background-color: $text-color-dark
+
+
+.form-footer
+
+  // .form-footer__name
+  &__name
+
+
+  // .form-footer__email
+  &__email
+
+
+  // .form-footer__budget
+  &__budget
+
+
+  // .form-footer__descr
+  &__descr
+    height: 70px
+
+
+  // .form-footer__btn
+  &__btn
+    margin-top: 10px
+    font-size: 15px
+    padding: 22px 42px
+    color: $text-color-dark
+    background-color: $active-color
+    border: none
+    border-radius: 12px
+
+  &__name, &__email, &__budget, &__descr
+    width: 355px
+    margin-bottom: 40px
+    padding-bottom: 10px
+    font-size: 14px
+    background-color: $bg-color
+    border-bottom: 1px solid $text-color-dark
+
+    @media(max-width: 768px)
+      font-size: 11px
+      width: 300px
+
+    @media(max-width: 700px)
+      width: 100%
+      font-size: 14px

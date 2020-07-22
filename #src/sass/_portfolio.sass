@@ -1,0 +1,81 @@
+.portfolio
+  margin-bottom: 70px
+  @media (max-width: 576px)
+    margin-bottom: 30px
+
+  // .portfolio__row
+  &__row
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+  // .portfolio__text
+  &__text
+    margin-right: 20px
+  // .portfolio__subtitle
+  &__subtitle
+
+  // .portfolio__title
+  &__title
+
+
+  // .portfolio__work
+  &__work
+
+.work
+  margin-bottom: 30px
+  flex: 0 1 48%
+  @media (max-width: 576px)
+    margin-bottom: 20px
+    flex: 0 1 100%
+
+  // .work__img
+  &__img
+    margin-bottom: 20px
+    img
+      width: 100%
+
+  // .work__title
+  &__title
+    margin-bottom: 5px
+    font-size: 16px
+    font-weight: 500
+    // .work__title_name
+    &_name
+      text-transform: uppercase
+      color: $active-color
+
+  // .work__subtitle
+  &__subtitle
+    font-size: 12px
+
+.hide
+    display: none
+
+.tabs
+  padding-bottom: 40px
+  display: flex
+  align-items: center
+  @media (max-width: 576px)
+    padding-bottom: 30px
+  // .tabs__item
+  &__item
+    margin: 0 10px
+    cursor: pointer
+    font-weight: 500
+
+    @media (max-width: 768px)
+      margin: 0 5px
+      font-size: 11px
+      letter-spacing: 0
+
+
+
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+    // .tabs__item_active
+    &_active
+      color: $active-color
+      border-bottom: 1px solid $active-color
